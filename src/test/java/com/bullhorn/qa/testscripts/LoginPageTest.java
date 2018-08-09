@@ -1,5 +1,6 @@
 package com.bullhorn.qa.testscripts;
 
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -21,13 +22,13 @@ public class LoginPageTest extends TestBase {
 		loginPage = new LoginPage();
 	}
 
-	/*@Test(priority = 1)
+	@Test
 	public void loginTitleTest() {
 		String title = loginPage.getLoginPageTitle();
 		Assert.assertEquals("Please Log In", title);
-	}*/
+	}
 
-	@Test(priority = 2)
+	@Test
 	public void loginTest() {
 		loginPage.loginApplication(prop.getProperty("username"), prop.getProperty("password"));
 	}

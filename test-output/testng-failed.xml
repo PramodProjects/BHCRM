@@ -3,14 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.bullhorn.qa.testscripts.LoginPageTest">
+      <class name="com.bullhorn.qa.testscripts.HomePageTest">
         <methods>
-          <include name="loginTest"/>
-          <include name="tearDown"/>
+          <include name="clickFastAddTest"/>
           <include name="setUp"/>
-          <include name="loginTitleTest"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- com.bullhorn.qa.testscripts.LoginPageTest -->
+      </class> <!-- com.bullhorn.qa.testscripts.HomePageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
